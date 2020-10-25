@@ -1,13 +1,16 @@
 .main-footer {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 33px;
   justify-content: center;
   width: 100%;
-  padding: 0 24px;
+  padding: 44px 24px 6px;
   color: #fff;
   background-color: #000;
 
   .footer-logo {
+    padding-bottom: 24px;
+    // margin-bottom: 33px;
     text-align: center;
     border-bottom: 1px solid rgba(#fff, 0.2);
     img {
@@ -17,6 +20,8 @@
   }
 
   .footer-menu {
+    display: grid;
+    row-gap: 31px;
     font-size: 14px;
     font-weight: 300;
     line-height: 14px;
@@ -25,14 +30,26 @@
     letter-spacing: 2px;
   }
   .footer-address {
+    margin-top: 9px;
     text-align: center;
     opacity: 0.5;
   }
   .footer-contact {
+    margin-top: 8px;
     text-align: center;
     opacity: 0.5;
   }
   .line-title {
     font-weight: bold;
+  }
+  .footer-social {
+    display: grid;
+    column-gap: 15px;
+    justify-content: center;
+    margin-top: 5px;
+
+    a {
+      grid-row: 1;
+    }
   }
 }
