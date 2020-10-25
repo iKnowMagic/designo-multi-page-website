@@ -1,0 +1,26 @@
+.page-header {
+  display: grid;
+  row-gap: 24px;
+  padding: 80px 24px 0;
+  color: #fff;
+  text-align: center;
+
+  .page-header-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+  .page-header-info {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 25px;
+  }
+  .page-header-button {
+  }
+  .page-header-image {
+    width: 100%;
+    height: 427px;
+    background-image: url('~@/assets/images/home/desktop/image-hero-phone.png');
+    background-position: top -114px left -147px;
+  }
+}

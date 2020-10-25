@@ -1,0 +1,55 @@
+.projects {
+  display: grid;
+  grid-template-rows: 250px 250px 250px;
+  grid-template-columns: 327px;
+  row-gap: 24px;
+  justify-content: center;
+  padding: 120px 0;
+  background-color: #fff;
+  .project-box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 85px 0;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #000;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+
+    &.web-design {
+      background-image: url('~@/assets/images/home/mobile/image-web-design.jpg');
+    }
+    &.app-design {
+      background-image: url('~@/assets/images/home/mobile/image-app-design.jpg');
+    }
+    &.graphic-design {
+      background-image: url('~@/assets/images/home/mobile/image-graphic-design.jpg');
+    }
+
+    .project-name {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: 1.4px;
+    }
+    .project-link {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 5px;
+
+      &::after {
+        display: inline-block;
+        width: 20px;
+        height: 10px;
+        content: '';
+        background-image: url('~@/assets/images/shared/desktop/icon-right-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center right;
+      }
+    }
+  }
+}

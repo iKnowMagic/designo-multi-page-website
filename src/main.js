@@ -1,14 +1,16 @@
-import '@/icons.js'
-
 import Vue from 'vue'
-import App from './App.vue'
-import router from '@/router'
+
+import '@/icons.js'
+import '@/scss/app.scss'
 
 import store from '@/state'
-import Vuelidate from 'vuelidate'
-import VueMq from 'vue-mq'
 
-import '@/scss/app.scss'
+import VueMq from 'vue-mq'
+import Vuelidate from 'vuelidate'
+
+import router from '@/router'
+
+import App from './App.vue'
 
 Vue.use(VueMq, {
   breakpoints: {

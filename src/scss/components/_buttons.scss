@@ -1,0 +1,38 @@
+.btn {
+  width: 152px;
+  height: 56px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #333136;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.btn-on-dark {
+  @extend .btn;
+
+  color: #333136;
+  background: #fff;
+
+  &:hover {
+    color: #fff;
+    background: #ffad9b;
+  }
+}
+.btn-on-light {
+  @extend .btn;
+
+  color: #fff;
+  background: #e7816b;
+
+  &:hover {
+    color: #fff;
+    background: #ffad9b;
+  }
+}

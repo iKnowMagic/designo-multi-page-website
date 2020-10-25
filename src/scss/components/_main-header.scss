@@ -1,0 +1,20 @@
+.nav {
+  display: grid;
+  grid-template-columns: 202px auto;
+  justify-content: space-between;
+  padding: 35px 24px 29px;
+
+  .logo {
+    width: 202px;
+    height: 27px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .menu {
+    padding-top: 4px;
+  }
+}
