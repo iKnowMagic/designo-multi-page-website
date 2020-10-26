@@ -52,4 +52,19 @@
       }
     }
   }
+
+  @include mq($from: tablet) {
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 689px;
+
+    .project-box {
+      padding: 40px 0;
+      .project-name {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 48px;
+        letter-spacing: 2px;
+      }
+    }
+  }
 }
