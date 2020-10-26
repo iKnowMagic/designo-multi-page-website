@@ -1,23 +1,24 @@
 <template>
-  <header>
-    <div class="header-title">Where in the world?</div>
-    <div class="header-toggle" @click="lightMode = !lightMode">
-      <v-icon v-if="!lightMode" name="moon" class="icon" />
-      <v-icon v-if="lightMode" name="regular/moon" class="icon" />
-      Dark Mode
+  <div class="page-header">
+    <div class="page-header-title">
+      Award-winning custom designs and digital branding solutions
     </div>
-  </header>
+    <div class="page-header-info">
+      With over 10 years in the industry, we are experienced in creating fully
+      responsive websites, app design, and engaging brand experiences. Find out
+      more about our services.
+    </div>
+    <div class="page-header-button">
+      <button class="btn-on-dark">learn more</button>
+    </div>
+    <div class="page-header-image"></div>
+  </div>
 </template>
 
 <script>
 // @flow
 
-import { sync } from 'vuex-pathify'
-
 export default {
-  name: 'PageHeader',
-  computed: {
-    lightMode: sync('app/lightMode')
-  }
+  name: 'PageHeader'
 }
 </script>

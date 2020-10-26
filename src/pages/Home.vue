@@ -1,19 +1,6 @@
 <template>
   <div class="home">
-    <div class="page-header">
-      <div class="page-header-title">
-        Award-winning custom designs and digital branding solutions
-      </div>
-      <div class="page-header-info">
-        With over 10 years in the industry, we are experienced in creating fully
-        responsive websites, app design, and engaging brand experiences. Find
-        out more about our services.
-      </div>
-      <div class="page-header-button">
-        <button class="btn-on-dark">learn more</button>
-      </div>
-      <div class="page-header-image"></div>
-    </div>
+    <page-header />
     <div class="projects">
       <div class="project-box web-design">
         <div class="project-name">Web Design</div>
@@ -146,8 +133,10 @@
 <script>
 // @flow
 
+import PageHeader from '@/components/PageHeader'
+
 export default {
   name: 'Home',
-  components: {}
+  components: { PageHeader }
 }
 </script>
