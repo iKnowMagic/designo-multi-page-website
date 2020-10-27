@@ -1,20 +1,56 @@
-.nav {
-  display: grid;
-  grid-template-columns: 202px auto;
-  justify-content: space-between;
+.main-header {
   padding: 35px 24px 29px;
 
-  .logo {
-    width: 202px;
-    height: 27px;
+  .nav {
+    display: grid;
+    grid-template-columns: 202px auto;
+    justify-content: space-between;
 
-    img {
-      width: 100%;
-      height: 100%;
+    .logo {
+      width: 202px;
+      height: 27px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .menu-mobile {
+      padding-top: 4px;
+    }
+
+    .menu {
+      display: none;
     }
   }
 
-  .menu {
-    padding-top: 4px;
+  @include mq($from: tablet) {
+    padding: 62px 40px 6px;
+    .nav {
+      display: grid;
+      grid-template-columns: auto 1fr;
+
+      .menu-mobile {
+        display: none;
+      }
+      .menu {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 42px;
+        align-items: center;
+        justify-content: end;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 14px;
+        color: #333136;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        .menu-item {
+          justify-self: end;
+        }
+      }
+    }
   }
 }

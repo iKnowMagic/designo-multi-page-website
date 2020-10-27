@@ -69,4 +69,34 @@
       text-align: center;
     }
   }
+
+  @include mq($from: tablet) {
+    row-gap: 30px;
+    // grid-template-rows: auto 26px 78px;
+
+    .attribute-box {
+      grid-template-rows: 47px 14px 29px 68px 44px;
+      grid-template-columns: 228px 440px;
+      row-gap: 0;
+      column-gap: 37px;
+      // align-items: center;
+
+      .attribute-image {
+        grid-row: 1 / span 5;
+        grid-column: 1;
+      }
+      .attribute-title {
+        grid-row: 2;
+        grid-column: 2;
+        // align-self: end;
+        text-align: left;
+      }
+      .attribute-info {
+        grid-row: 4;
+        grid-column: 2;
+        // align-self: start;
+        text-align: left;
+      }
+    }
+  }
 }

@@ -23,6 +23,25 @@
     font-weight: 300;
     line-height: 25px;
   }
+
+  @include mq($from: tablet) {
+    grid-template-rows: 1fr 60px 1fr;
+    padding: 56px 24px 33px;
+    margin: 0 38px;
+
+    .call-to-action-title {
+      padding: 0 150px;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 40px;
+    }
+    .call-to-action-info {
+      padding: 0 100px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 26px;
+    }
+  }
 }
 
 .call-to-action-wrapper {
@@ -30,6 +49,10 @@
   padding: 0 24px;
   padding: 119px 0 20px;
   background-color: #fff;
+
+  @include mq($from: tablet) {
+    padding: 73px 0 20px;
+  }
 }
 .call-to-action-background {
   position: absolute;
@@ -48,5 +71,9 @@
   &::after {
     content: '';
     background-color: #000;
+  }
+
+  @include mq($from: tablet) {
+    grid-template-rows: 1fr 106px;
   }
 }
